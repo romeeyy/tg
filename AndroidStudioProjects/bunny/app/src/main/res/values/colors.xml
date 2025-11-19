@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_400">#9C27B0</color>
+    <color name="blue_gradient_start">#2196F3</color>
+    <color name="gray">#808080</color>
+    <color name="purple_100">#E1BEE7</color>
+    <color name="progressPurple">#A78BFA</color>   <!-- soft purple -->
+    <color name="progressPink">#F472B6</color>     <!-- baby pink -->
+    <color name="progressBlue">#60A5FA</color>     <!-- sky blue -->
+    </resources>
+

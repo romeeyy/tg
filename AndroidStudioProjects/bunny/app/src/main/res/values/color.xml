@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><color name="titleColor">#6B21A8</color>
+    <color name="subTitleColor">#9C27B0</color>
+    <color name="welcomeCardBg">#B794F4</color> <!-- fallback tint; actual gradient used in drawable -->
+    <color name="welcomeLabelColor">#E9D5FF</color>
+    <color name="welcomeTitleColor">#FFFFFF</color>
+    <color name="welcomeSubColor">#F3E8FF</color>
+    <color name="sparklesTint">#FFFFFF</color>
+    <color name="statCardBg">#FFFFFFFF</color>
+    <color name="statValueColor">#111827</color>
+    <color name="statLabelColor">#6B7280</color>
+    <color name="featureCardBg">#FFFFFF</color>
+    <color name="dailyTipBg">#FFF7ED</color>
+    <color name="bottomNavSelected">#7C3AED</color>
+    <color name="bottomNavUnselected">#9CA3AF</color>
+    <color name="darkToggleIconTint">#7C3AED</color>
+</resources>

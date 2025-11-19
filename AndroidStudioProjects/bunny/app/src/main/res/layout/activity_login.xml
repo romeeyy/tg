@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome_gradient"
+    android:padding="24dp">
+
+    <!-- 💜 Use FrameLayout so we can overlap decorations -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 🌸 Decorative Stars / Bunny -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/star"
+            android:alpha="0.3"
+            android:layout_gravity="start|top"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <!-- 🐰 Your main login layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="172dp"
+                android:layout_height="164dp"
+                android:layout_marginTop="40dp"
+                android:contentDescription="Mind Tokki Logo"
+                android:src="@drawable/mindtokki_logo" />
+
+            <!-- App Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mind Tokki"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:layout_marginTop="12dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your AI Study and Wellness Buddy 🌸"
+                android:textSize="14sp"
+                android:textColor="@color/purple_400"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="24dp"
+                android:elevation="6dp">
+
+                <!-- Username -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    app:startIconDrawable="@drawable/ic_person">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Password -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    app:endIconMode="password_toggle"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Forgot Password -->
+                <TextView
+                    android:id="@+id/tvForgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/purple_500"
+                    android:textSize="12sp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Login Button -->
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:backgroundTint="@color/blue_gradient_start"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/btn_gradient" />
+
+                <!-- Sign Up -->
+                <TextView
+                    android:id="@+id/tvSignUp"
+                    android:layout_width="168dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:text="Don’t have an account? Sign Up"
+                    android:textColor="@color/purple_500"
+                    android:textSize="12sp" />
+
+                <!-- Privacy note -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔒 Your diary is private and secure. Only you can access your thoughts."
+                    android:textColor="@color/gray"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:background="@drawable/privacy_bg"
+                    android:padding="12dp"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|bottom"
+                    android:alpha="0.4"
+                    android:src="@drawable/bunny_icon"
+                    android:translationX="-20dp"
+                    android:translationY="-40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 🌈 Floating Action Button (Theme Toggle) -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="Toggle Theme"
+            android:src="@drawable/ic_dark_mode"
+            android:background="@drawable/fab_glow"
+            app:backgroundTint="@android:color/transparent"
+            app:tint="@android:color/white" />
+
+    </FrameLayout>
+</ScrollView>

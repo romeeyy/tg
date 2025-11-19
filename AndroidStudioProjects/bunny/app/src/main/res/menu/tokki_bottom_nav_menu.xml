@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_sparkle"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_journal"
+        android:icon="@drawable/ic_journal_heart"
+        android:title="Journal" />
+
+    <item
+        android:id="@+id/nav_tokki"
+        android:icon="@drawable/ic_tokki_chat"
+        android:title="Tokki" />
+
+    <item
+        android:id="@+id/nav_study"
+        android:icon="@drawable/ic_calendar_study"
+        android:title="Study" />
+
+    <item
+        android:id="@+id/nav_garden"
+        android:icon="@drawable/ic_plant_garden"
+        android:title="Garden" />
+
+</menu>
