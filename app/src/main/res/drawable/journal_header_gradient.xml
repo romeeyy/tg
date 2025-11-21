@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="18dp"/>
+
+    <gradient
+        android:startColor="#FFB7E9" />.  <!-- baby pink -->
+    android:centerColor="#E8C7FF"  <!-- lilac -->
+    android:endColor="#C5B4FF"     <!-- soft purple -->
+    android:angle="135"/>
+</shape>

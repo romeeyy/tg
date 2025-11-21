@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF7FF">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_tokki_header"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvBunny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐰"
+            android:textSize="40sp"
+            android:layout_marginRight="12dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat with Tokki"
+                android:textSize="20sp"
+                android:textColor="#A855F7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your friendly AI bunny companion"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- CHAT MESSAGES AREA -->
+    <ScrollView
+        android:id="@+id/scrollChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/messagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <!-- TYPING INDICATOR -->
+    <include
+        android:id="@+id/layoutTyping"
+        layout="@layout/layout_typing_indicator"
+        android:visibility="gone"/>
+
+    <!-- INPUT BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/bg_chat_input"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input"
+            android:hint="Type your message to Tokki..."
+            android:padding="14dp"
+            android:textColor="#111827"
+            android:textColorHint="#A3A3A3"
+            android:maxLines="4"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_send_button"
+            android:text="➤"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginStart="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

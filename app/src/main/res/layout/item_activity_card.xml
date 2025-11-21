@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@drawable/bg_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Emoji -->
+    <TextView
+        android:id="@+id/activityEmoji"
+        android:text="🫁"
+        android:textSize="38sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/activityTitle"
+        android:text="Deep Breathing"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/activityDescription"
+        android:text="Short description..."
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Duration -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activityClock"
+            android:src="@drawable/ic_clock"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:tint="@android:color/black" />
+
+        <TextView
+            android:id="@+id/activityTime"
+            android:text="5 min"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+

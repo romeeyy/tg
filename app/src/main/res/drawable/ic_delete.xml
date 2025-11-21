@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Trash can lid -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M3,6h18v2H3z" />
+
+    <!-- Trash can body -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M5,8h14v12a2,2 0 0 1 -2,2H7a2,2 0 0 1 -2,-2z" />
+
+    <!-- Left line -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M9,11v7" />
+
+    <!-- Middle line -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M12,11v7" />
+
+    <!-- Right line -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M15,11v7" />
+
+</vector>
+

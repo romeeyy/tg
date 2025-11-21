@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Existing colors -->
+    <color name="welcomeSubColor">#3F3E8F</color>
+    <color name="sparklesTint">#FFFFFFFF</color>
+    <color name="statCardBg">#FFFFFFFF</color>
+    <color name="statValueColor">#111827</color>
+    <color name="statLabelColor">#6B7280</color>
+    <color name="featureCardBg">#FFFFFFFF</color>
+    <color name="dailyTipBg">#FFF7ED</color>
+    <color name="bottomNavSelected">#7C3AED</color>
+    <color name="bottomNavUnselected">#9CA3AF</color>
+    <color name="darkToggleIconTint">#7C3AED</color>
+
+    <!-- Study colors -->
+    <color name="peach_soft">#FFF3E8</color>
+    <color name="lavender_100">#F3E8FF</color>
+    <color name="pink_soft">#FFE0F5</color>
+    <color name="purple_main">#C8AFFF</color>
+
+    <!-- login/study extras -->
+    <color name="purple_700">#5B21B6</color>
+    <color name="purple_500">#8B56F6</color>
+    <color name="purple_400">#A78BFA</color>
+
+    <color name="blue_gradient_start">#60A5FA</color>
+    <color name="gray">#6B7280</color>
+    <color name="purple_100">#F3E8FF</color>
+    <color name="progressPurple">#8B56F6</color>
+
+    <!-- Titles -->
+    <color name="titleColor">#6B21A8</color>
+    <color name="subTitleColor">#7A6FA3</color>
+    <color name="welcomeLabelColor">#FFB7F4</color>
+    <color name="welcomeTitleColor">#C8AFFF</color>    <!-- soft purple -->
+
+</resources>

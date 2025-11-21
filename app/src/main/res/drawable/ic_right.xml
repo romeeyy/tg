@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Notebook cover -->
+    <path
+        android:fillColor="#A78BFA"
+        android:pathData="M4,3h14a1,1 0 0 1 1,1v16a1,1 0 0 1 -1,1H4a1,1 0 0 1 -1,-1V4a1,1 0 0 1 1,-1z"/>
+
+    <!-- Notebook lines -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6,6h10v0.5H6z
+                          M6,9h10v0.5H6z
+                          M6,12h10v0.5H6z
+                          M6,15h10v0.5H6z
+                          M6,18h10v0.5H6z"/>
+
+    <!-- Spiral ring dots (converted circle → arc path) -->
+    <path android:fillColor="#F472B6"
+        android:pathData="M4.5,5.5
+                          a0.5,0.5 0 1,0 0,1
+                          a0.5,0.5 0 1,0 0,-1" />
+
+    <path android:fillColor="#F472B6"
+        android:pathData="M4.5,8.5
+                          a0.5,0.5 0 1,0 0,1
+                          a0.5,0.5 0 1,0 0,-1" />
+
+    <path android:fillColor="#F472B6"
+        android:pathData="M4.5,11.5
+                          a0.5,0.5 0 1,0 0,1
+                          a0.5,0.5 0 1,0 0,-1" />
+
+    <path android:fillColor="#F472B6"
+        android:pathData="M4.5,14.5
+                          a0.5,0.5 0 1,0 0,1
+                          a0.5,0.5 0 1,0 0,-1" />
+
+    <path android:fillColor="#F472B6"
+        android:pathData="M4.5,17.5
+                          a0.5,0.5 0 1,0 0,1
+                          a0.5,0.5 0 1,0 0,-1" />
+
+</vector>
+

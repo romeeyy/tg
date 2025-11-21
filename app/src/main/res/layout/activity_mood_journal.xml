@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@drawable/bg_dashboard"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ========================================================= -->
+            <!-- 🌸 SECTION 1 — HEADER GRADIENT CARD                      -->
+            <!-- ========================================================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/journal_header_gradient"
+                android:padding="18dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clipToOutline="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_heart_small"
+                        app:tint="#E85BA6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AI Mood Journal"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/titleColor"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Express your feelings and let Tokki help you understand your emotions better 🌸"
+                    android:textSize="13sp"
+                    android:textColor="@color/subTitleColor"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+
+            <!-- ========================================================= -->
+            <!-- 🌸 SECTION 2 — JOURNAL INPUT CARD                        -->
+            <!-- ========================================================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How are you feeling today?"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/titleColor"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/etFeeling"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="top|start"
+                    android:background="@drawable/textarea_bg"
+                    android:padding="12dp"
+                    android:hint="Write about your day… Tokki is here to listen 🤍"
+                    android:textColor="@color/titleColor"
+                    android:textColorHint="@color/subTitleColor"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="14dp">
+
+                    <!-- 🎤 Voice Record -->
+                    <Button
+                        android:id="@+id/btnVoiceRecord"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="🎤 Voice Record"
+                        android:background="@drawable/voice_btn_bg"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="1dp"/>
+
+                    <!-- ✉️ Submit Entry -->
+                    <Button
+                        android:id="@+id/btnSubmitEntry"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="Submit Entry ✨"
+                        android:background="@drawable/btn_gradient"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+            <!-- ========================================================= -->
+            <!-- 🌸 SECTION 3 — JOURNAL ENTRIES LIST                     -->
+            <!-- ========================================================= -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Journal Entries ✨"
+                android:textColor="@color/titleColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/entryContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUserEntry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/entry_user_bg"
+                    android:padding="14dp"
+                    android:text="(Your latest entry will appear here)"
+                    android:textColor="@color/titleColor"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/tvTokkiResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:background="@drawable/entry_ai_bg"
+                    android:text="Tokki’s supportive AI response will appear here 🐰💗"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/tokki_bottom_nav_bg"
+        android:elevation="12dp"
+        app:itemBackground="@drawable/tokki_nav_item_background"
+        app:itemIconSize="26dp"
+        app:itemVerticalTranslationEnabled="false"
+        app:itemIconTint="@color/tokki_nav_selector"
+        app:itemTextColor="@color/tokki_nav_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/tokki_bottom_nav_menu" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

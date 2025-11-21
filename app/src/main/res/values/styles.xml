@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Your existing styles are here -->
+
+    <!-- Add Tokki bottom nav styles BELOW inside the same <resources> -->
+
+    <style name="TokkiNavActive" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TokkiNavInactive" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
