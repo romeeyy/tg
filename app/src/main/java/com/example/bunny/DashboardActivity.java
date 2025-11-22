@@ -83,10 +83,6 @@ public class DashboardActivity extends AppCompatActivity {
             }
 
 
-        } else if (itemId == R.id.nav_garden) {
-                Toast.makeText(this, "Garden", Toast.LENGTH_SHORT).show();
-                return true;
-            }
 
             return false;
         });
@@ -95,7 +91,6 @@ public class DashboardActivity extends AppCompatActivity {
         MaterialCardView cardFeatureJournal = findViewById(R.id.cardFeatureJournal);
         MaterialCardView cardFeatureChat = findViewById(R.id.cardFeatureChat);
         MaterialCardView cardFeatureStudy = findViewById(R.id.cardFeatureStudy);
-        MaterialCardView cardFeatureGarden = findViewById(R.id.cardFeatureGarden);
 
         // ✅ OPEN MOOD JOURNAL
         cardFeatureJournal.setOnClickListener(v ->
@@ -113,11 +108,7 @@ public class DashboardActivity extends AppCompatActivity {
             );
 
 
-    // Placeholder until Garden is added
-        cardFeatureGarden.setOnClickListener(v ->
-                Toast.makeText(this, "Open Garden", Toast.LENGTH_SHORT).show()
-        );
-    }
+
 
     private void updateDarkToggleIcon(AppCompatImageButton button, boolean dark) {
         if (dark) {

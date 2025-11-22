@@ -3,10 +3,10 @@
     android:shape="rectangle">
 
     <gradient
-        android:startColor="#FFB7F4"   <!-- pastel pink -->
-    android:centerColor="#E4C4FF"  <!-- soft blend -->
-    android:endColor="#C8AFFF"     <!-- soft purple -->
-    android:angle="45" />
+        android:startColor="#FFB7F4"
+        android:centerColor="#F3C8FF"
+        android:endColor="#C8AFFF"
+        android:angle="45" />
 
-    <corners android:radius="6dp" />
+    <corners android:radius="10dp"/>
 </shape>

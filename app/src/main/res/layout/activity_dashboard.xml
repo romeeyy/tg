@@ -273,50 +273,7 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
-                <!-- Garden Plants -->
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="6dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="3dp"
-                    app:cardBackgroundColor="@color/statCardBg">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        android:gravity="center">
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/ic_sprout_small"
-                            app:tint="#10B981" />
-
-                        <TextView
-                            android:id="@+id/tvStatGardenValue"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="23"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/statValueColor"
-                            android:layout_marginTop="6dp" />
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Garden Plants"
-                            android:textSize="12sp"
-                            android:textColor="@color/statLabelColor"
-                            android:layout_marginTop="4dp" />
-
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
 
                 <!-- Mood Entries -->
                 <com.google.android.material.card.MaterialCardView
@@ -550,63 +507,7 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
-                <!-- Mind Tokki Garden -->
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cardFeatureGarden"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
-                    app:cardBackgroundColor="@color/featureCardBg"
-                    android:layout_marginBottom="10dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp"
-                        android:gravity="center_vertical">
-
-                        <View
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            android:background="@drawable/feature_square_green"
-                            android:layout_marginEnd="10dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/tvFeatureTitle4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mind Tokki Garden"
-                                android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:textColor="@color/titleColor" />
-
-                            <TextView
-                                android:id="@+id/tvFeatureDesc4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Grow your garden as you earn points"
-                                android:textSize="12sp"
-                                android:textColor="@color/subTitleColor"
-                                android:layout_marginTop="2dp" />
-
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="18dp"
-                            android:layout_height="18dp"
-                            android:src="@drawable/ic_plant_garden" />
-
-                    </LinearLayout>
-
-                </com.google.android.material.card.MaterialCardView>
 
 
             </LinearLayout>

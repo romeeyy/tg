@@ -21,9 +21,5 @@
         android:icon="@drawable/ic_calendar_study"
         android:title="Study" />
 
-    <item
-        android:id="@+id/nav_garden"
-        android:icon="@drawable/ic_plant_garden"
-        android:title="Garden" />
 
 </menu>

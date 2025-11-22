@@ -3,5 +3,4 @@
     <item android:id="@+id/nav_journal" android:icon="@drawable/ic_journal" android:title="Journal"/>
     <item android:id="@+id/nav_tokki" android:icon="@drawable/ic_tokki" android:title="Tokki"/>
     <item android:id="@+id/nav_study" android:icon="@drawable/ic_study" android:title="Study"/>
-    <item android:id="@+id/nav_garden" android:icon="@drawable/ic_garden" android:title="Garden"/>
 </menu>
